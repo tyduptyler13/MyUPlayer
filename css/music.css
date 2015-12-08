@@ -1,0 +1,76 @@
+html,body {
+    height:100%;
+}
+body {
+    width:100%;
+    max-height:100%;
+    max-width:100%;
+    overflow: hidden;
+    padding:0px;
+    margin: 0px;
+    background-color: black;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#error {
+    color:red;
+    font-size:large;
+    position:fixed;
+    bottom:0xp;
+    width:100%;
+    text-align:center;
+}
+.player {
+    position:fixed;
+    top: 10px;
+    right: 10px;
+    border: thick white solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: auto;
+    background: white;
+    color: green;
+}
+.player:hover {
+    opacity:1 !important; /* Override Button */
+}
+.player .controls {
+    background-color:black;
+}
+.player .controls a:hover {
+    cursor:pointer;
+    text-decoration:underline;
+}
+.player a.active {
+    background-color:purple;
+}
+.player #songs {
+    max-height: 300px;
+    overflow-y: auto;
+    width: 300px;
+}
+.player #songs li:nth-child(even) {
+    background:gray;
+}
+#settings {
+    display:none;
+}
+#home {
+    position: fixed;
+    top: -10px;
+    width: 200px;
+    margin-left: -100px;
+    left: 50%;
+    border: gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(255,255,255,.8);
+    transition: top 1s;
+    text-align: center;
+}
+#home:hover {
+    top: 0px;
+}
+

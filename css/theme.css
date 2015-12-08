@@ -1,0 +1,60 @@
+html, body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: green;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header a {
+    color: yellow;
+    text-shadow: black 1px 1px 1px;
+}
+
+header a:visited {
+    color: orange;
+}
+
+header a:hover {
+    color: white;
+}
+
+header a:active {
+    color: black;
+}
+
+.left, .right {
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.correct {
+    max-width: 100%;
+    float: right;
+    margin: 10px;
+}
+
+.left {
+    width: 74%;
+    float: left;
+}
+
+.right {
+    width: 23%;
+    vertical-align: top;
+    float: right;
+}
+

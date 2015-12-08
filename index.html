@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="description" content="A webgl/chrome experiment using the WebAudio API.">
+<meta name="keywords" content="music,visualizer,webaudio">
+<meta name="author" content="Tyler Scott">
+
+<title>Experimental Music Visualizer</title>
+
+<link rel="stylesheet" type="text/css" href="css/music.css">
+
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js"></script>
+
+<script src="js/stats.min.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/AudioLibrary.js?v=2.0"></script>
+
+</head>
+
+<body>
+<div id="home">
+    <a href="/">Click here to return home</a>
+</div>
+<div class="player">
+    <div id="player"></div>
+    <div class="songs">
+        Songs: <input id="songSearch" type="text" placeholder="Search soundcloud">
+        <hr>
+        <div id="songs">
+            When you search, songs will appear here.
+        </div>
+    </div>
+    <hr>
+    <div class="settings">
+        Settings: <button type="button" id="settingsToggle">Open/Close</button>&nbsp;
+        <button type="button" id="dimToggle">Dim</button>
+        <table id="settings">
+            <tr>
+                <td>Smoothing:</td>
+                <td>None|<input class = "setting" type="range" min="0" max=".99" step=".01" id="smoothing" value=".8" />|Max</td>
+            </tr>
+            <tr>
+                <td title="The color that high frequencies will reach">High Color</td>
+                <td><input class="setting" type="color" id="colorHigh" value="#FF0000" /></td>
+            </tr>
+            <tr>
+                <td title="The color that low frequencies will reach.">Low Color</td>
+                <td><input class="setting" type="color" id="colorLow" value="#00FF00" /></td>
+            </tr>
+            <tr>
+                <td>Cubes - X</td>
+                <td><input class="setting" type="number" min="1" value="10" id="cubeX"/></td>
+            </tr>
+            <tr>
+                <td>Cubes - Y</td>
+                <td><input class="setting" type="number" min="1" value="10" id="cubeZ"/></td>
+            </tr>
+            <tr>
+                <td>Spacing</td>
+                <td><input class="setting" type="number" min="0" value="1" id="space"/></td>
+            </tr>
+            <tr>
+                <td>Size</td>
+                <td><input class="setting" type="number" min="1" value="10" id="size"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="button" id="save">Save</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
