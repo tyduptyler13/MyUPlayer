@@ -2,7 +2,7 @@ MyUPlayer
 ====
 A new web equalizer writen for HTML5 using JQuery, Three.js, and WebAudio
 
-A working version is available [here](https://tyduptyler13.github.io/MyUPlayer).
+A working version is available [here](https://music.myuplay.com).
 
 Features
 ----
